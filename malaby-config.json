@@ -1,0 +1,28 @@
+{
+    "tests": [
+        {
+            "pattern": "*.spec.js",
+            "command": "npm test ${filePath}",
+            "debugCommand": "",
+            "filesToWatch": []
+        },
+        {
+            "pattern": "*.unit.js",
+            "command": "yarn unit-test ${filePath}",
+            "debugCommand": "",
+            "filesToWatch": []
+        },
+        {
+            "pattern": "*.it.js",
+            "command": "grunt someTask -test=*${fileName}*",
+            "debugCommand": "grunt someOtherTask -test=*${fileName}* --debug",
+            "filesToWatch": [
+                ".json",
+                ".jsx"
+            ]
+        }
+    ],
+    "filesToWatch": [
+        ".js"
+    ]
+}
